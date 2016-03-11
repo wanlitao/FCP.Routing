@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsistentHash\ConsistentHashRouting.cs" />
+    <Compile Include="Constants\LoadBalanceConstants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Random\ThreadLocalRandom.cs" />
     <Compile Include="Random\RandomRouting.cs" />

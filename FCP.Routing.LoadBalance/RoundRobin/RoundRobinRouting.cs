@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Threading;
 
 namespace FCP.Routing.LoadBalance
 {
@@ -8,9 +8,21 @@ namespace FCP.Routing.LoadBalance
     /// <typeparam name="T"></typeparam>
     public class RoundRobinRouting<T> : Routing<T>
     {
-        protected override T selectInternal(T[] instance)
+        private int _next;
+        
+        public RoundRobinRouting()
+          : this(-1) 
+        { }
+        
+        public RoundRobinRouting(int next)
         {
-            throw new NotImplementedException();
+            _next = next;
+        }
+        
+        protected override T selectInternal(T[] instances)
+        {
+            var roundNext = Interlocked.Increment(ref _next) & int.MaxValue;
+            return instances[roundNext % instances.Length];
         }
     }
 }

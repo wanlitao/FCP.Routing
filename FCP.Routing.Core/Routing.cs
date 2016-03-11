@@ -18,8 +18,8 @@
         /// <summary>
         /// internal select method
         /// </summary>
-        /// <param name="instance"></param>
+        /// <param name="instances"></param>
         /// <returns></returns>
-        protected abstract T selectInternal(T[] instance);
+        protected abstract T selectInternal(T[] instances);
     }
 }
