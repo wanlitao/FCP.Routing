@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCP.Routing.LoadBalance", "FCP.Routing.LoadBalance\FCP.Routing.LoadBalance.csproj", "{5AC2BFAC-1C50-4043-9319-B7163A27E50F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCP.Routing.Core", "FCP.Routing.Core\FCP.Routing.Core.csproj", "{F79DBCFC-8273-487B-AD9A-4FFD2EB6250D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AC2BFAC-1C50-4043-9319-B7163A27E50F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AC2BFAC-1C50-4043-9319-B7163A27E50F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AC2BFAC-1C50-4043-9319-B7163A27E50F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AC2BFAC-1C50-4043-9319-B7163A27E50F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F79DBCFC-8273-487B-AD9A-4FFD2EB6250D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F79DBCFC-8273-487B-AD9A-4FFD2EB6250D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F79DBCFC-8273-487B-AD9A-4FFD2EB6250D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F79DBCFC-8273-487B-AD9A-4FFD2EB6250D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
