@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FCP.Routing</RootNamespace>
-    <AssemblyName>FCP.Routing.Core</AssemblyName>
+    <AssemblyName>FCP.Routing</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,6 +41,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IRouting.cs" />
+    <Compile Include="LoadBalance\ConsistentHash\ConsistentHash.cs" />
+    <Compile Include="LoadBalance\ConsistentHash\ConsistentHashRouting.cs" />
+    <Compile Include="LoadBalance\ConsistentHash\HashAlgorithm\MurmurHash.cs" />
+    <Compile Include="LoadBalance\Constants\LoadBalanceConstants.cs" />
+    <Compile Include="LoadBalance\Random\RandomRouting.cs" />
+    <Compile Include="LoadBalance\Random\ThreadLocalRandom.cs" />
+    <Compile Include="LoadBalance\RoundRobin\RoundRobinRouting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Routing.cs" />
   </ItemGroup>

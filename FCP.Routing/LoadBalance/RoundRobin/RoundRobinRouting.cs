@@ -19,7 +19,7 @@ namespace FCP.Routing.LoadBalance
             _next = next;
         }
         
-        protected override T selectInternal(T[] instances)
+        protected override T selectInternal(object message, T[] instances)
         {
             var roundNext = Interlocked.Increment(ref _next) & int.MaxValue;
             return instances[roundNext % instances.Length];

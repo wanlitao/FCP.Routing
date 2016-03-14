@@ -5,21 +5,26 @@
         /// <summary>
         /// pick a instance to receive the message
         /// </summary>
+        /// <param name="message">The message that is being routed</param>
         /// <param name="instances">A collection of instance</param>
         /// <returns></returns>
-        public virtual T select(params T[] instances)
+        public virtual T select(object message, params T[] instances)
         {
             if (instances == null || instances.Length == 0)
                 return default(T);
 
-            return selectInternal(instances);
+            if (instances.Length == 1)
+                return instances[0];
+
+            return selectInternal(message, instances);
         }
 
         /// <summary>
         /// internal select method
         /// </summary>
-        /// <param name="instances"></param>
+        /// <param name="message">The message that is being routed</param>
+        /// <param name="instances">A collection of instance</param>
         /// <returns></returns>
-        protected abstract T selectInternal(T[] instances);
+        protected abstract T selectInternal(object message, T[] instances);
     }
 }
