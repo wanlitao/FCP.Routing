@@ -8,7 +8,7 @@
     {
         protected override T selectInternal(object message, T[] instances)
         {
-            var randNext = ThreadLocalRandom.Current.Next(instances.Length - 1);
+            var randNext = ThreadLocalRandom.Current.Next(instances.Length);
             return instances[randNext % instances.Length];
         }
     }

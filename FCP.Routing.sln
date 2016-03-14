@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCP.Routing", "FCP.Routing\FCP.Routing.csproj", "{F79DBCFC-8273-487B-AD9A-4FFD2EB6250D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCP.Routing.Test", "FCP.Routing.Test\FCP.Routing.Test.csproj", "{37481F53-E4E1-42BE-93A6-34A9243F9FE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F79DBCFC-8273-487B-AD9A-4FFD2EB6250D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F79DBCFC-8273-487B-AD9A-4FFD2EB6250D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F79DBCFC-8273-487B-AD9A-4FFD2EB6250D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37481F53-E4E1-42BE-93A6-34A9243F9FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37481F53-E4E1-42BE-93A6-34A9243F9FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37481F53-E4E1-42BE-93A6-34A9243F9FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37481F53-E4E1-42BE-93A6-34A9243F9FE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
