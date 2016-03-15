@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("FCP.Routing.Core")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("FCP.Routing")]
+[assembly: AssemblyDescription("load balancing router for distributed system")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("FCP.Routing.Core")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyCompany("GreatBillows")]
+[assembly: AssemblyProduct("FCP.Routing")]
+[assembly: AssemblyCopyright("Copyright © GreatBillows 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
